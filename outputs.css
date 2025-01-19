@@ -2,6 +2,7 @@
 body {
   max-width: 900px;
   margin: 0 auto;
+  padding: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgb(252, 246, 177);
   color: rgb(45, 30, 47);
@@ -15,12 +16,10 @@ h1 {
 header div {
   width: 100%;
 }
-header div h1 {
-  font-size: xx-large;
-}
 header div img {
   display: block;
   width: 100%;
+  height: 284px;
   margin: 0 auto;
 }
 
@@ -82,34 +81,24 @@ header div img {
 }
 #preparation_container #step_boxes_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
 }
 #preparation_container #step_boxes_container .step_box {
   display: flex;
+  justify-content: space-around;
 }
 #preparation_container #step_boxes_container .step_box .step_number {
   background-color: rgb(247, 44, 37);
   height: 40px;
   width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-right: 20px;
-}
-#preparation_container #step_boxes_container .step_box .step_number .step_description {
-  margin-top: 0;
+  align-content: center;
+  text-align: center;
 }
 
 #footer_container {
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px rgb(247, 179, 43);
+  border-top: solid 1px;
   padding: 2%;
 }
-#footer_container div img {
-  margin-left: 5px;
-}
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=outputs.css.map */
