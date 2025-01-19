@@ -36,11 +36,11 @@
                     </div>
                     <div id="timer_container">
                         <div id="timer_buttons">
-                            <button>5</button><button>10</button><button>15</button><button>20</button>
+                            <button class="timer_button" id="five_minutes_btn">5</button><button class="timer_button" id="ten_minutes_btn">10</button><button class="timer_button" id="fifteen_minutes_btn">15</button><button class="timer_button" id="thirty_minutes_btn">30</button>
                         </div>
                         <div id="timer">
                             <img src="./assets/HOURGLASS.png" alt="timer">
-                            <div class="clock">0:00</div>
+                            <div class="clock"><span id="minutes">00</span><span>:</span><span id="seconds">00</span></div>
                         </div>
                         <div id="start_button_container">
                             <button id="start_button">start</button>
@@ -81,5 +81,7 @@
             <div><img src="./assets/facebook.png" alt="facebook"><img src="./assets/instagram.png" alt="instagram"><img src="./assets/x-twitter 1.png" alt="twitter"><img src="./assets/linkedin.png" alt="linkdedin"></div>
         </div>    
     </footer>
+    <script src="setTimer.js" type="module"></script>
+    <script src="runTimer.js" type="module"></script>
 </body>
 </html>
