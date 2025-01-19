@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favourite Food</title>
+    <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <nav><h1>Humita en 4 pasos</h1></nav>
+            <img src="./assets/humita.jpg" alt="plato de humita">
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="top_container">
+                <div id="ingredients_container">
+                    <h1>Ingredientes</h1>
+                    <div>
+                        <div><input type="checkbox"><label>12 choclos frescos</label></div>
+                        <div><input type="checkbox"><label>1 cebolla mediana</label></div>
+                        <div><input type="checkbox"><label>1/2 pimiento morrón rojo</label></div>
+                        <div><input type="checkbox"><label>1/2 taza de leche</label></div>
+                        <div><input type="checkbox"><label>1/2 taza de queso fresco rallado</label></div>
+                        <div><input type="checkbox"><label>1 cucharada de manteca</label></div>
+                        <div><input type="checkbox"><label>Sal y pimienta a gusto</label></div>
+                    </div>
+                </div>
+                <div id="time_container">
+                    <h1>Time</h1>
+                    <div id="preparation_time_container">
+                        <img src="./assets/CLOCK.png" alt="preparation time">
+                        <div class="clock">00:45</div>
+                    </div>
+                    <div id="timer_container">
+                        <div id="timer_buttons">
+                            <button class="timer_button" id="five_minutes_btn">5</button><button class="timer_button" id="ten_minutes_btn">10</button><button class="timer_button" id="fifteen_minutes_btn">15</button><button class="timer_button" id="thirty_minutes_btn">30</button>
+                        </div>
+                        <div id="timer">
+                            <img src="./assets/HOURGLASS.png" alt="timer">
+                            <div class="clock"><span id="minutes">00</span><span>:</span><span id="seconds">00</span></div>
+                        </div>
+                        <div id="start_button_container">
+                            <button id="start_button">start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_container" id="preparation_container">
+                <h1>Preparación</h1>
+                <div id="step_boxes_container">
+                    <div class="step_box">
+                        <div class="step_number">1</div>
+                        <div class="step_description">Desgranar los choclos y picar finamente la cebolla y el pimiento morrón.
+                        </div>
+                    </div>
+                    <div class="step_box">
+                        <div class="step_number">2</div>
+                        <div class="step_description">En una olla, derretir la manteca a fuego medio y sofreír la cebolla y el pimiento hasta que estén transparentes.
+                        </div>
+                    </div>
+                    <div class="step_box">
+                        <div class="step_number">3</div>
+                        <div class="step_description">Añadir los choclos y la leche a la olla, salpimentar a gusto, y cocinar a fuego bajo durante 30 minutos, revolviendo de vez en cuando.
+                        </div>
+                    </div>
+                    <div class="step_box">
+                        <div class="step_number">4</div>
+                        <div class="step_description">Agregar el queso fresco rallado, cocinar unos minutos hasta que se derrita y servir caliente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_container">
+            <div> &#169; Created by Ayelén</div>
+            <div><img src="./assets/facebook.png" alt="facebook"><img src="./assets/instagram.png" alt="instagram"><img src="./assets/x-twitter 1.png" alt="twitter"><img src="./assets/linkedin.png" alt="linkdedin"></div>
+        </div>    
+    </footer>
+    <script src="setTimer.js" type="module"></script>
+    <script src="runTimer.js" type="module"></script>
 </body>
 </html>

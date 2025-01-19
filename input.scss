@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+$myFontFamily: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$myColorOne: rgb(247, 44, 37);
+$myColorTwo: rgb(247, 179, 43);
+$myBackgroundColor: rgb(252, 246, 177);
+$textColor: rgb(45, 30, 47);
+
+body{
+    max-width: 900px; 
+    margin: 0 auto; 
+    font-family: $myFontFamily;
+    background-color: $myBackgroundColor;
+    color: $textColor;
+    height: 100%;
+}
+
+h1{
+    color: $myColorOne;
+    margin: 2%;
+    }
+
+header {
+    div {
+    width: 100%;
+    h1 {
+        font-size: xx-large;
+    }
+    img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        }
+    }
+}
+
+.top_container {
+    display: flex;
+    justify-content: space-around;
+    #ingredients_container{
+        background-color: $myColorTwo;
+        border-radius: 0 0 10px 10px;
+        padding: 2%;
+        width: 55%;
+    }
+    #time_container {
+        button {
+            background-color: $myColorOne;
+            font-size: small;
+            border: 1px;
+        }
+        #start_button {
+            border-radius: 10px 10px 10px 10px;
+        }
+        width: 20%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+            #preparation_time_container {
+            margin: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+            #timer_container {
+            margin: 5%;
+            display: flex;
+            flex-direction: column;
+                #timer_buttons {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                #timer {
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                #start_button_container {
+                    margin-left: auto;
+                }
+                
+            }
+            .clock {
+                font-family: 'Orbitron', sans-serif;
+                font-size:xx-large;
+            }
+    }
+}
+
+#preparation_container {
+    display: block;
+    margin-bottom: 15%;
+    #step_boxes_container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        .step_box { 
+            display: flex; 
+            .step_number { 
+                background-color: $myColorOne; 
+                height: 40px; 
+                width: 40px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+                flex-shrink: 0;
+                margin-right: 20px;
+                .step_description { 
+                    margin-top: 0;
+                } 
+            }
+        }
+    }
+}
+
+
+
+#footer_container {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px $myColorTwo;
+    padding: 2%;
+    div {
+        img {
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(252, 246, 177);
+  color: rgb(45, 30, 47);
+  height: 100%;
+}
+
+h1 {
+  color: rgb(247, 44, 37);
+  margin: 2%;
+}
+
+header div {
+  width: 100%;
+}
+header div h1 {
+  font-size: xx-large;
+}
+header div img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top_container {
+  display: flex;
+  justify-content: space-around;
+}
+.top_container #ingredients_container {
+  background-color: rgb(247, 179, 43);
+  border-radius: 0 0 10px 10px;
+  padding: 2%;
+  width: 55%;
+}
+.top_container #time_container {
+  width: 20%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.top_container #time_container button {
+  background-color: rgb(247, 44, 37);
+  font-size: small;
+  border: 1px;
+}
+.top_container #time_container #start_button {
+  border-radius: 10px 10px 10px 10px;
+}
+.top_container #time_container #preparation_time_container {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_container #time_container #timer_container {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.top_container #time_container #timer_container #timer_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.top_container #time_container #timer_container #timer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.top_container #time_container #timer_container #start_button_container {
+  margin-left: auto;
+}
+.top_container #time_container .clock {
+  font-family: "Orbitron", sans-serif;
+  font-size: xx-large;
+}
+
+#preparation_container {
+  display: block;
+  margin-bottom: 15%;
+}
+#preparation_container #step_boxes_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+#preparation_container #step_boxes_container .step_box {
+  display: flex;
+}
+#preparation_container #step_boxes_container .step_box .step_number {
+  background-color: rgb(247, 44, 37);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+#preparation_container #step_boxes_container .step_box .step_number .step_description {
+  margin-top: 0;
+}
+
+#footer_container {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px rgb(247, 179, 43);
+  padding: 2%;
+}
+#footer_container div img {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=output.css.map */
