@@ -5,6 +5,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgb(252, 246, 177);
   color: rgb(45, 30, 47);
+  height: 100%;
 }
 
 h1 {
@@ -42,7 +43,7 @@ header div img {
 }
 .top_container #time_container button {
   background-color: rgb(247, 44, 37);
-  font-size: x-small;
+  font-size: small;
   border: 1px;
 }
 .top_container #time_container #start_button {
@@ -52,7 +53,7 @@ header div img {
   margin: 5%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .top_container #time_container #timer_container {
   margin: 5%;
@@ -60,13 +61,14 @@ header div img {
   flex-direction: column;
 }
 .top_container #time_container #timer_container #timer_buttons {
-  display: inline-flex;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 }
 .top_container #time_container #timer_container #timer {
-  margin: 5%;
-  display: inline-flex;
-  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 .top_container #time_container #timer_container #start_button_container {
   margin-left: auto;

@@ -1,6 +1,4 @@
 let minutes = document.getElementById('minutes');
-
-
 let timer_btns = Array.from(document.getElementsByClassName('timer_button'))
 
 function changeValue (event){
