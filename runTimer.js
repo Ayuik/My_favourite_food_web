@@ -42,6 +42,9 @@ function runner (){
     updateDisplay(); 
 }
 
-function updateDisplay() { minutes.textContent = mins.toString().padStart(2, '0'); seconds.textContent = segs.toString().padStart(2, '0'); }
+function updateDisplay() { 
+    minutes.textContent = mins.toString().padStart(2, '0'); 
+    seconds.textContent = segs.toString().padStart(2, '0'); 
+}
 
 start_btn.addEventListener('click', startTimer)
